@@ -8,3 +8,14 @@ variable "region" {
   default = "us-east-1"
   type    = string
 }
+
+variable "ingress_rules" {
+  type = map(object({
+    port  = string
+    cidrs = list(string)
+  }))
+}
+
+variable "ami" {
+  default = "ami-04823729c75214919"
+}

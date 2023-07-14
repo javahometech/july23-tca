@@ -1,5 +1,5 @@
 data "aws_availability_zones" "azs" {
-  
+
 }
 
 output "azs" {
